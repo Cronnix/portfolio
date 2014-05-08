@@ -190,8 +190,7 @@ li a{
   padding-bottom: 7px;
   width: 235px;
   display: block;
-  margin: 35px auto 0 !important;
-  margin-bottom: 10px !important;
+  margin: 0 auto 10px !important;
 }
 
 .item img {
