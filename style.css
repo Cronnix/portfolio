@@ -73,6 +73,7 @@ h3 {
 
 p {
   margin: 20px 0;
+  line-height: 1.2em;
   font-family: 'Droid Serif', serif;
 }
 
@@ -114,9 +115,6 @@ li a{
 .ui-state-active {
   background: #91abc0;
   position: relative;
-  top: 2px;
-  height: 44px;
-  padding-top: 2px;
 }
 
 .ui-state-active:before {
@@ -190,7 +188,8 @@ li a{
   padding-bottom: 7px;
   width: 235px;
   display: block;
-  margin: auto;
+  margin: auto !important;
+  margin-bottom: 10px !important;
 }
 
 .item img {
@@ -198,6 +197,20 @@ li a{
   height: auto;
   min-width: 600px;
   max-width: 1000px
+}
+
+#ottoboni2 {
+  max-width: 500px;
+}
+
+.item p{
+  max-width: 800px;
+}
+
+.item {
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
 }
 
 .clearfix:before,
