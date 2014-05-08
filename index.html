@@ -4,35 +4,33 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/tabs.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(document).ready( function() {
-      $('#tab-container').easytabs();
-    });
-  </script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="js/tabs.js"></script>
   <title>Anton Pustovoyts portfolio</title>
 </head>
 
 <body>
   
 <div class="bodywrap">
-  <div id="contentwrap">
+  <div class="contentwrap" id="tabs">
     <div id="presentation">
       <h1>Anton Pustovoyt</h1>
       <h2>Web developer</h2>
     </div>
     
-    <ul class='etabs'>
-      <li class='tab'><a href="#tab1">Front-end</a></li>
-      <li class='tab'><a href="#tab2">Games</a></li>
-      <li class='tab'><a href="#tab3">Various</a></li>
+    <ul class='tabs'>
+      <li><a href="#tabs-1">Front-end</a></li>
+      <li><a href="#tabs-2">Games</a></li>
+      <li><a href="#tabs-3">Various</a></li>
     </ul>
     
-    <div class="sectionwrap" id="tab1">
+    <div class="sectionwrap" id="tabs-1">
       
       <div class="item">
-        <h1>Work Name</h1>
+        <h1>Work Name1</h1>
         <p class ="skills">Skill1, skill2, skill3</p>
         <p> Work description</p>
         <img src="Images/placeholder.jpg">
@@ -43,10 +41,10 @@
       
     </div>
     
-    <div class="sectionwrap" id="tab2">
+    <div class="sectionwrap" id="tabs-2">
       
       <div class="item">
-        <h1>Work Name</h1>
+        <h1>Work Name2</h1>
         <p class ="skills">Skill1, skill2, skill3</p>
         <p> Work description</p>
         <img src="Images/placeholder.jpg">
@@ -57,10 +55,10 @@
       
     </div>
     
-    <div class="sectionwrap" id="tab3">
+    <div class="sectionwrap" id="tabs-3">
       
       <div class="item">
-        <h1>Work Name</h1>
+        <h1>Work Name3</h1>
         <p class ="skills">Skill1, skill2, skill3</p>
         <p> Work description</p>
         <img src="Images/placeholder.jpg">
