@@ -220,6 +220,10 @@ li a{
   padding-bottom: 40px;
 }
 
+.sectionwrap .item:last-child {
+  border: none;
+}
+
 .clearfix:before,
 .clearfix:after {
   content:"";
