@@ -75,7 +75,7 @@ h3 {
 p {
   color: #666666;
   margin: 25px 0;
-  line-height: 1.2em;
+  line-height: 1.5em;
   font-family: 'Droid Serif', serif;
 }
 
@@ -157,7 +157,7 @@ li a{
   top: 0px;
   height: 100%;
   width: 300px;
-  background-color: #8098ab;
+  background-color: #497599;
 }
 
 #presentation h1,#presentation h2,#presentation h3,#presentation p  {
@@ -216,7 +216,7 @@ li a{
 
 .item {
   margin-bottom: 25px;
-  border-bottom: 2px solid black;
+  border-bottom: 5px double black;
   padding-bottom: 40px;
 }
 
