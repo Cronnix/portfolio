@@ -253,3 +253,36 @@ bottom: 10px;
 .clearfix {
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
+
+@media screen and (max-width: 930px) {
+  #presentation {
+    width: 100%;
+    height: 181px;
+    
+  }
+  
+  #presentation img {
+    display: none;
+  }
+  
+  li {
+    display: inline-block;
+    width: 33.3%;
+  }
+  ul {
+    width: 100%;
+  }
+  
+  .contentwrap {
+    margin: 181px 0 0 0;
+  }
+  
+  #portfoliowrap {
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+  }
+  .ui-state-active:before{
+    display: none;
+  }
+}

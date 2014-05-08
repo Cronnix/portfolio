@@ -22,4 +22,8 @@ $(document).ready(function() {
             $(this).data("lastOpenedPanel", $(ui.panel));
         }
     });
+  $("li").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  })
 });
