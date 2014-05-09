@@ -27,3 +27,18 @@ $(document).ready(function() {
     return false;
   })
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) { //use `this`, not `document`
+      $('.collapse').slideUp(400);
+      $('#presentation').animate({
+          height: "42px",
+        }, 400);
+    }
+    if ($(this).scrollTop() < 100) { //use `this`, not `document`
+      $('.collapse').slideDown(400);
+      $('#presentation').animate({
+        height: "142px",
+      }, 400);
+    }
+});
