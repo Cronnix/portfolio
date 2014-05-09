@@ -296,3 +296,42 @@ li a{
     display: block;
   }
 }
+
+@media handheld {
+  #presentation {
+    width: 100%;
+    height: 225px;
+    
+  }
+  
+  #presentation img {
+    display: none;
+  }
+  
+  li {
+    display: inline-block;
+    width: 33.3%;
+  }
+  ul {
+    width: 100%;
+  }
+  
+  .contentwrap {
+    margin: 225px 0 0 0;
+  }
+  
+  #portfoliowrap {
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+  }
+  .ui-state-active:before{
+    display: none;
+  }
+  #presentation p:last-child{
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
