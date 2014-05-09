@@ -29,16 +29,15 @@ $(document).ready(function() {
 });
 
 $(window).on('resize', function(){
-    if ($(window).width()>915) {  
+    if ($("body").width()>915) {  
       $('.collapse').css("display", "block");
       $('#presentation').css("height", "100%");
       $('.collapse').css("height", "auto");
+      collapsed = false;
     }
-    else if ($(window).width()<915) {
-      //$('.collapse').css("display", "block");
-      //$('#presentation').css("height", 137);
+    else if ($("body").width()<=910 && !collapsed) {
+      $('#presentation').css("height", "137px");
       $('.collapse').css("height", "auto");
-      open();
     }
 });
 
@@ -47,28 +46,26 @@ var collapsed = false;
 
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  
+  if ($("body").width()<930)
+  {    
     if (scroll > 50 && !animate) {
       close();
     }
     else if (scroll < 50){
       open();
     }
+  }
 });
 
 function close() {
-  if ($(window).width()<930) {
     animate  = true;  
     $('.collapse').stop().slideUp(400);
-      $('#presentation').stop().animate({height: "42px",}, 400, function(){animate=false; collapsed=true;});
-  }
+    $('#presentation').stop().animate({height: "42px",}, 400, function(){animate=false; collapsed=true;});
 }
 
 function open() {
-  if ($(window).width()<930){
     animate  = true;
     $('.collapse').stop().slideDown(400);
     $('#presentation').stop().animate({ height: "137px", }, 400, function(){animate=false; collapsed=false;});
-  }
 }
 
