@@ -265,12 +265,16 @@ li a{
 @media screen and (max-width: 930px) {
   #presentation {
     width: 100%;
-    height: 137px;
+    height: 142px;
     
   }
   
   #presentation img {
     display: none;
+  }
+  
+  #presentation h2 {
+    margin-top: 5px;
   }
   
   #presentation p{
@@ -297,7 +301,7 @@ li a{
   }
   
   .contentwrap {
-    margin: 225px 0 0 0;
+    margin: 142px 0 0 0;
   }
   
   #portfoliowrap {
