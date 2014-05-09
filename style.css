@@ -261,7 +261,7 @@ li a{
 @media screen and (max-width: 930px) {
   #presentation {
     width: 100%;
-    height: 225px;
+    height: 249px;
     
   }
   
@@ -272,9 +272,20 @@ li a{
   li {
     display: inline-block;
     width: 33.3%;
+    min-width: 0px;
+    padding: 0;
   }
   ul {
     width: 100%;
+    min-width: 0px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    min-width: 200px;;
+    max-width: 1000px;
+    display: block;
   }
   
   .contentwrap {
