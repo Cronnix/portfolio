@@ -29,12 +29,14 @@ $(document).ready(function() {
 });
 
 $(window).on('resize', function(){
-    if ($(document).Width()>930) {  
+    if ($(window).width()>915) {  
       $('.collapse').css("display", "block");
       $('#presentation').css("height", "100%");
       $('.collapse').css("height", "auto");
     }
-    else if ($(document).Width()<930) {
+    else if ($(window).width()<915) {
+      //$('.collapse').css("display", "block");
+      //$('#presentation').css("height", 137);
       $('.collapse').css("height", "auto");
       open();
     }
