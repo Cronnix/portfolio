@@ -96,7 +96,7 @@ ul {
 li {
   display: block;
   height: 42px;
-  width: 274px;
+  width: 270px;
   min-width: 155px;
   font-size: 30px;
   padding-left: 20px;
@@ -194,7 +194,7 @@ li a{
 #worksp {
   border-bottom: 2px solid white;
   padding-bottom: 7px;
-  width: 235px;
+  width: 239px;
   display: block;
   margin: 0 auto 10px !important;
 }
