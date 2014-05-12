@@ -284,6 +284,10 @@ li a{
     min-width: 0px;
     padding: 0;
   }
+  
+  li a {
+ 	font-size: 20px;
+  }
   ul {
     width: 100%;
     min-width: 0px;
