@@ -201,16 +201,30 @@ li a{
 }
 
 .item img {
-  width: auto;
+  width: 400px;
   height: auto;
-  min-width: 600px;
-  max-width: 1000px;
+  display: block;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 12px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 12px 0px rgba(50, 50, 50, 0.75);
+}
+
+.item img:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.item a:not(.imglink) {
+  margin-bottom: 30px;
   display: block;
 }
 
-.item a {
-  margin-bottom: 30px;
-  display: block;
+.imglink {
+  display: inline-block;
+}
+
+.imglink+.imglink {
+  margin-left: 40px;
 }
 
 #ottoboni2 {
@@ -297,9 +311,19 @@ li a{
   
   .item img {
     height: auto;
+    width: 100%;
     min-width: 200px;;
     max-width: 1000px;
     display: block;
+  }
+
+  .imglink {
+    width: 100%;
+  }
+
+  .imglink+.imglink {
+    margin-left: 0px;
+    margin-top: 30px;
   }
   
   .contentwrap {
