@@ -204,9 +204,11 @@ li a{
 .item img {
   width: auto;
   height: auto;
-  min-width: 600px;
-  max-width: 1000px;
-  display: block;
+  display: inline-block;
+}
+
+.item img:hover {
+	opacity: 0.8;
 }
 
 .item a {
