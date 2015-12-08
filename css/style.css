@@ -86,6 +86,7 @@ p {
 
 a {
   color: black;
+  display: inline-block;
 }
 
 ul {
@@ -201,30 +202,16 @@ li a{
 }
 
 .item img {
-  width: 400px;
+  width: auto;
   height: auto;
+  min-width: 600px;
+  max-width: 1000px;
   display: block;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 0px 12px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 0px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
-.item img:hover {
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
-.item a:not(.imglink) {
+.item a {
   margin-bottom: 30px;
   display: block;
-}
-
-.imglink {
-  display: inline-block;
-}
-
-.imglink+.imglink {
-  margin-left: 40px;
 }
 
 #ottoboni2 {
@@ -232,11 +219,12 @@ li a{
 }
 
 .item p{
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .item {
   margin-bottom: 40px;
+  border-bottom: 5px double black;
   padding-bottom: 50px;
 }
 
@@ -279,7 +267,7 @@ li a{
 @media screen and (max-width: 930px) {
   #presentation {
     width: 100%;
-    height: 137px;
+    height: 150px;
     
   }
   
@@ -291,9 +279,13 @@ li a{
     margin: 7px;
   }
   
+  #presentation h2 {
+	margin-top: 10px;
+  }
+  
   li {
     display: inline-block;
-    width: 33.3%;
+    width: 50%;
     min-width: 0px;
     padding: 0;
   }
@@ -310,19 +302,9 @@ li a{
   
   .item img {
     height: auto;
-    width: 100%;
     min-width: 200px;;
     max-width: 1000px;
     display: block;
-  }
-
-  .imglink {
-    width: 100%;
-  }
-
-  .imglink+.imglink {
-    margin-left: 0px;
-    margin-top: 30px;
   }
   
   .contentwrap {

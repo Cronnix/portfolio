@@ -86,6 +86,7 @@ p {
 
 a {
   color: black;
+  display: inline-block;
 }
 
 ul {
@@ -278,9 +279,13 @@ li a{
     margin: 7px;
   }
   
+  #presentation h2 {
+	margin-top: 10px;
+  }
+  
   li {
     display: inline-block;
-    width: 33.3%;
+    width: 50%;
     min-width: 0px;
     padding: 0;
   }

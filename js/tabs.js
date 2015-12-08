@@ -66,6 +66,6 @@ function close() {
 function open() {
     animate  = true;
     $('.collapse').stop().slideDown(400);
-    $('#presentation').stop().animate({ height: "137px", }, 400, function(){animate=false; collapsed=false;});
+    $('#presentation').stop().animate({ height: "150px", }, 400, function(){animate=false; collapsed=false;});
 }
 
