@@ -208,6 +208,7 @@ li a{
   -webkit-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.65);
   -moz-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.65);
   box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.65);
+  max-width: 100%;
 }
 
 .item img:hover {
